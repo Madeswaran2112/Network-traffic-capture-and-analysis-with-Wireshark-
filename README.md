@@ -21,6 +21,8 @@ flowchart TD
 ### Step 1:
 Install Wireshark on the system.
 
+
+
 ### Step 2:
 Launch Wireshark and select the network interface (Ethernet/Wi-Fi).
 
@@ -33,6 +35,45 @@ Start the capture, apply filters (like http, tcp, ip.addr == x.x.x.x) to analyze
   - Suspicious activities (e.g., unusual ports, repeated requests).
 ## PROGRAM:
 Wireshark Packet Capture and Filter Usage
+## 1. Open Wireshark and Select a Network Interface
+• Launch Wireshark.
+• Select an active interface (like Wi-Fi or Ethernet) to start capturing packets.
+
+<img width="1920" height="1080" alt="Screenshot 2025-10-04 094751" src="https://github.com/user-attachments/assets/2aa40799-f32e-41a7-b4e4-d3c0523906f4" />
+
+
+## 2. Start Capturing Packets
+• Click the blue shark fin icon or double-click the interface.
+• Wireshark will start capturing all real-time traffic.
+
+<img width="1920" height="1080" alt="Screenshot 2025-10-04 115746" src="https://github.com/user-attachments/assets/ce43eb9f-bf28-45b2-851d-d27ed374305d" />
+
+
+
+
+## 3. Apply Filters to Focus on Specific Traffic
+• Use filters like http, ip.addr == 192.168.1.1, or tcp.port == 80 in the top filter
+bar to narrow down results.
+
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-10-04 115912" src="https://github.com/user-attachments/assets/a6309596-36ee-499f-95c7-183e24ef3667" />
+
+
+## 4. Analyze Packet Details
+• Click on a packet to view its detailed breakdown including frame, Ethernet,
+IP, TCP/UDP layers, and data payload.
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-10-04 115934" src="https://github.com/user-attachments/assets/4651c001-d05a-4cd2-80a9-0724e72f1800" />
+
+
+## 5. Export or Save the Capture
+• Go to File > Save As to store the capture in .pcap format for future analysis.
+
+
+<img width="1920" height="1080" alt="Screenshot 2025-10-04 120021" src="https://github.com/user-attachments/assets/9f1f25a5-9d88-42e8-8b9a-bd931ef87bbd" />
+
 
 ## OUTPUT:
 Captured Packets with Protocol Analysis and Detailed Packet Info
